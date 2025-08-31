@@ -1,23 +1,18 @@
-import { useEffect, useRef, useState } from "react";
-
+import { useEffect, useRef } from 'react';
 interface OverviewProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'danger';
 }
 
-const Overview: React.FC<OverviewProps> = ({ children, variant = 'primary', ...props }) => {
+const Overview: React.FC<OverviewProps> = () => {
   const hasDataFetched = useRef(false);
 
-  const cols = [
-  ]
+  // const cols = [];
 
   useEffect(() => {
     if (hasDataFetched.current) return;
-  }, [])
+  }, []);
 
-  return (
-    <div>
-    </div>
-  );
+  return <div></div>;
 };
 
 export default Overview;
